@@ -1,4 +1,5 @@
 #include <iostream>
+#include <vector>
 
 int main()
   {
@@ -9,6 +10,9 @@ int main()
   bool army2 = false;
   bool army3 = true;
   bool army4 = false;
+  
+  int tileW = 8;   // how big wide
+  int tileH = 8;   // how big high
   
   //graphics/sprites go here
   
