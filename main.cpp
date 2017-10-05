@@ -12,7 +12,32 @@ int main()
   
   //graphics/sprites go here
   
+ std::vector<std::vector<bool> > map;
+   for(int i=0; i<tileH; i++)
+   {
+    std::vector<bool> temp;
+     for(int j=0; j<tileW; j++)
+     {
+      temp.push_back(false);
+     }
+     map.push_back(temp);
+   }
   
+    for(int i=0; i<map.size(); i++)
+  {
+    for(int j=0; j<map[i].size(); j++)
+    {
+      if(map[i][j] == true)
+      {
+        std::cout << '0';
+      }
+      else
+      {
+        std::cout << ' ';
+      }
+    }
+    std::cout << std::endl;
+  }
   
   }
   
